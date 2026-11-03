@@ -34,7 +34,7 @@ Add to `.repo/local_manifests/joan_camera.xml`:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="YOUR_GITHUB_USERNAME/android_vendor_lge_joan-camera"
+  <project name="JacoaFur/android_vendor_lge_joan-camera"
            path="vendor/lge/joan-camera"
            remote="github"
            revision="lineage-22.2" />
@@ -44,7 +44,7 @@ Add to `.repo/local_manifests/joan_camera.xml`:
 Or clone directly from the root of your LineageOS source tree:
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/android_vendor_lge_joan-camera.git vendor/lge/joan-camera
+git clone https://github.com/JacoaFur/android_vendor_lge_joan-camera.git vendor/lge/joan-camera
 ```
 
 ### 2. Inherit in `device/lge/joan/device.mk`
