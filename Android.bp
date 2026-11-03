@@ -1,0 +1,68 @@
+// Soong build configuration for LG V30 Stock Camera (`vendor/lge/joan-camera`)
+// Compatible with LineageOS 22.2 (Android 15) and AOSP Android 14/15 ROM trees.
+
+soong_namespace {
+}
+
+java_library {
+    name: "com.lge.camera.shim",
+    installable: true,
+    product_specific: true,
+    srcs: ["shim/src/**/*.java"],
+    platform_apis: true,
+    libs: [
+        "framework",
+    ],
+}
+
+android_app_import {
+    name: "AiXAiCam",
+    apk: "proprietary/product/priv-app/AiXAiCam/AiXAiCam.apk",
+    privileged: true,
+    product_specific: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    compile_multilib: "32",
+    overrides: [
+        "Aperture",
+        "Camera2",
+        "Snap",
+    ],
+    required: [
+        "com.lge.camera.shim",
+        "privapp-permissions-lgcamera.xml",
+        "default-permissions-lgcamera.xml",
+        "hiddenapi-package-whitelist-lgcamera.xml",
+        "lgcamera_config.xml",
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-lgcamera.xml",
+    src: "proprietary/etc/permissions/privapp-permissions-lgcamera.xml",
+    sub_dir: "permissions",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "default-permissions-lgcamera.xml",
+    src: "proprietary/etc/default-permissions/default-permissions-lgcamera.xml",
+    sub_dir: "default-permissions",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "hiddenapi-package-whitelist-lgcamera.xml",
+    src: "proprietary/etc/sysconfig/hiddenapi-package-whitelist-lgcamera.xml",
+    sub_dir: "sysconfig",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "lgcamera_config.xml",
+    src: "proprietary/product/etc/camera_config.xml",
+    filename: "camera_config.xml",
+    product_specific: true,
+}

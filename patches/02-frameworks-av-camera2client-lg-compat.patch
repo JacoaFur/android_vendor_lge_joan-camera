@@ -1,0 +1,18 @@
+--- a/services/camera/libcameraservice/api1/client2/Parameters.cpp
++++ b/services/camera/libcameraservice/api1/client2/Parameters.cpp
+@@ -1150,6 +1150,15 @@ status_t Parameters::initialize(CameraMetadata *info, int deviceVersion) {
+     params.set(CameraParameters::KEY_VIDEO_SNAPSHOT_SUPPORTED,
+         isVideoSnapshotSupported ? CameraParameters::TRUE : CameraParameters::FALSE);
+ 
++    // LG V30 Stock Camera (com.lge.camera) HAL1 compatibility defaults
++    params.set("video-hdr-supported", "0,0,0,0");
++    params.set("supported-live-snapshot-sizes", "3840x2160,1920x1080,1280x720");
++    params.set("shutter-speed", "0");
++    params.set("lg-iso", "auto");
++    params.set("lg-wb", "0");
++    params.set("lg-manual-mode-reset", "0");
++    params.set("manualfocus_step", "-1");
++
+     status_t res = buildFastInfo();
+     if (res != OK) return res;
+ 

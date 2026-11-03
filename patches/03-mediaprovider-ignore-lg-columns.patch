@@ -1,0 +1,22 @@
+--- a/src/com/android/providers/media/MediaProvider.java
++++ b/src/com/android/providers/media/MediaProvider.java
+@@ -120,6 +120,20 @@ public class MediaProvider extends ContentProvider {
++    private static final Set<String> LG_LEGACY_MEDIA_COLUMNS = new HashSet<>(Arrays.asList(
++            "camera_mode", "burst_id", "project_id", "video_datetaken", "storage_type",
++            "bg_camera_mode", "protection", "is_favorite", "group_id", "rel_path",
++            "use_panorama_viewer", "projection_type", "cropped_area_image_width_pixels",
++            "cropped_area_image_height_pixels", "full_pano_width_pixels", "full_pano_height_pixels",
++            "cropped_area_left_pixels", "cropped_area_top_pixels", "initial_horizontal_fov_degrees"
++    ));
++
++    private static void stripLgLegacyColumns(ContentValues values) {
++        if (values == null) return;
++        for (String col : LG_LEGACY_MEDIA_COLUMNS) {
++            values.remove(col);
++        }
++    }
++
+     @Override
+     public Uri insert(Uri uri, ContentValues initialValues, Bundle extras) {
++        stripLgLegacyColumns(initialValues);
+         // existing MediaProvider.insert implementation

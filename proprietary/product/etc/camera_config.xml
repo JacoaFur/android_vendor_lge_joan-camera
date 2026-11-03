@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Preference>
+    <default>
+        <!-- Mode ************************************************* -->
+        <item name="mode_rear_supported">
+            mode_normal,
+            mode_manual_camera,
+            mode_manual_video,
+            mode_cinema,
+            mode_cineshot,
+            mode_popout_camera,
+            mode_food,
+            mode_slow_motion,
+            mode_panorama_lg_raw,
+            mode_snap,
+            mode_timelapse_video,
+            mode_panorama_lg_360_proj,
+            mode_square_snap_shot,
+            mode_square_matching_shot,
+            mode_square_grid_shot,
+            mode_square_guide_shot,
+            mode_flash_jumpcut,
+            mode_youtube_live,
+        </item>
+        <item name="mode_front_supported">
+            mode_normal,
+            mode_cineshot,
+            mode_snap,
+            mode_square_snap_shot,
+            mode_square_matching_shot,
+            mode_square_grid_shot,
+            mode_square_guide_shot,
+            mode_flash_jumpcut,
+            mode_youtube_live,
+        </item>
+        <!-- camera rear size ************************************************* -->
+        <item name="camera_pictureSize_rear_supported">
+            4656x3492,
+            3264x2448,
+            4656x2620,
+            3264x1836,
+            4656x2328,
+            2560x1280,
+            3492x3492,
+            1836x1836
+        </item>
+        <item name="camera_previewSize_rear_supported">
+            480x360dp,
+            480x360dp,
+            640x360dp,
+            640x360dp,
+            720x360dp,
+            720x360dp,
+            360x360dp,
+            360x360dp
+        </item>
+        <item name="camera_previewSizeOnScreen_rear_supported">
+            480x360dp,
+            480x360dp,
+            640x360dp,
+            640x360dp,
+            720x360dp,
+            720x360dp,
+            360x360dp,
+            360x360dp
+        </item>
+        <item name="camera_pictureSize_rear_default">
+            4656x3492
+        </item>
+        <!-- camera sub rear size ************************************************* -->
+        <item name="camera_pictureSize_sub_rear_supported">
+            4160x3120,
+            2880x2160,
+            4160x2340,
+            2560x1440,
+            4160x2080,
+            2560x1280,
+            3120x3120,
+            1440x1440
+        </item>
+        <item name="camera_previewSize_sub_rear_supported">
+            480x360dp,
+            480x360dp,
+            640x360dp,
+            640x360dp,
+            720x360dp,
+            720x360dp,
+            360x360dp,
+            360x360dp
+        </item>
+        <item name="camera_previewSizeOnScreen_sub_rear_supported">
+            480x360dp,
+            480x360dp,
+            640x360dp,
+            640x360dp,
+            720x360dp,
+            720x360dp,
+            360x360dp,
+            360x360dp
+        </item>
+        <item name="camera_pictureSize_sub_rear_default">
+            4160x3120
+        </item>
+        <!-- camera front size ************************************************* -->
+        <item name="camera_pictureSize_front_supported">
+            2560x1920,
+            2560x1440,
+            2560x1280,
+            1920x1920
+        </item>
+        <item name="camera_previewSize_front_supported">
+            480x360dp,
+            640x360dp,
+            720x360dp,
+            360x360dp
+        </item>
+        <item name="camera_previewSizeOnScreen_front_supported">
+            480x360dp,
+            640x360dp,
+            720x360dp,
+            360x360dp
+        </item>
+        <item name="camera_pictureSize_front_default">
+            2560x1920
+        </item>
+        <!-- video rear size *************************************************** -->
+        <!--Mod Copyright (c) 2023 에어 론 리 (AeronLee). All Rights Reserved.-->	
+	<item name="video_size_rear_supported">
+        		3840x2160@60,
+        		3840x2160,
+        		2560x1080@120,
+        		2560x1080@60,
+        		2560x1080,
+        		2160x1080@120,
+        		2160x1080@60,
+        		2160x1080,		
+        		1920x1080@120,
+        		1920x1080@60,
+        		1920x1080,		
+        		1680x720@120,
+        		1680x720@60,		
+        		1680x720,
+        		1440x720@120,
+        		1440x720@60,
+        		1440x720,
+        		1280x960@120,
+        		1280x960@60,
+        		1280x960,
+        		1280x720@120,
+        		1280x720@60,
+        		1280x720
+		</item>
+        <item name="video_previewSizeOnScreen_rear_supported">
+        		640x360dp,
+        		640x360dp,
+        		640x274dp,
+        		640x274dp,
+        		640x274dp,
+        		640x320dp,
+        		640x320dp,
+        		640x320dp,
+        		640x360dp,
+        		640x360dp,
+        		640x360dp,
+        		640x274dp,
+        		640x274dp,
+        		640x274dp,
+        		640x320dp,
+        		640x320dp,
+        		640x320dp,
+        		640x480dp,
+        		640x480dp,
+        		640x480dp,
+        		640x360dp,
+        		640x360dp,
+        		640x360dp
+        </item>
+        <item name="video_size_rear_default">
+            1920x1080
+        </item>
+        <!-- video sub rear size *************************************************** -->
+        <item name="video_size_sub_rear_supported">
+        		3840x2160@60,
+        		3840x2160,
+        		2560x1080@120,
+        		2560x1080@60,
+        		2560x1080,
+        		2160x1080@120,
+        		2160x1080@60,
+        		2160x1080,		
+        		1920x1080@120,
+        		1920x1080@60,
+        		1920x1080,		
+        		1680x720@120,
+        		1680x720@60,		
+        		1680x720,
+        		1440x720@120,
+        		1440x720@60,
+        		1440x720,
+        		1280x960@120,
+        		1280x960@60,
+        		1280x960,
+        		1280x720@120,
+        		1280x720@60,
+        		1280x720
+		</item>
+        <item name="video_previewSizeOnScreen_sub_rear_supported">
+        		640x360dp,
+        		640x360dp,
+        		640x274dp,
+        		640x274dp,
+        		640x274dp,
+        		640x320dp,
+        		640x320dp,
+        		640x320dp,
+        		640x360dp,
+        		640x360dp,
+        		640x360dp,
+        		640x274dp,
+        		640x274dp,
+        		640x274dp,
+        		640x320dp,
+        		640x320dp,
+        		640x320dp,
+        		640x480dp,
+        		640x480dp,
+        		640x480dp,
+        		640x360dp,
+        		640x360dp,
+        		640x360dp
+        </item>
+        <item name="video_size_sub_rear_default">
+            1920x1080
+        </item>
+        <!-- video front size *************************************************** -->
+        <item name="video_size_front_supported">
+			3840x2160,
+			2560x1080,  
+			2160x1080,
+			1920x1080,
+			1680x720,
+			1440x720,  		
+			1280x720
+        </item>
+        <item name="video_previewSizeOnScreen_front_supported">
+			640x360dp,
+			640x360dp,
+			720x360dp,
+			640x360dp,
+			840x360dp,
+			720x360dp,
+			640x360dp
+        </item>
+        <item name="video_size_front_default">
+            1920x1080
+        </item>
+        <!-- zsl supported *************************************************** -->
+        <item name="zsl_supported">
+            0
+        </item>
+        <!-- HDMI MHL supported *************************************************** -->
+        <item name="hdmi_mhl_supported">
+            true
+        </item>
+        <!-- Morpho night shot *************************************************** -->
+        <item name="morpho_night_shot_supported">
+            true
+        </item>
+        <!-- Renesas ISP *************************************************** -->
+        <item name="use_renesas_ISP">
+            false
+        </item>
+        <!-- MTK *************************************************** -->
+        <item name="MTK_chipset">
+            false
+        </item>
+        <!-- Light frame *************************************************** -->
+        <item name="light_frame_supported">
+            true
+        </item>
+        <item name="light_frame_hal_supported">
+            true
+        </item>
+        <!-- Long shot *************************************************** -->
+        <item name="long_shot_supported">
+            true
+        </item>
+        <!-- panorama *************************************************** -->
+        <item name="panorama_preview_size">
+            1920x1080
+        </item>
+        <!-- 360 Panorama -->
+        <item name="panorama_360_dist_cor_value">
+            4.657434e-002,
+            -1.575409e-002,
+            5.367806e-003,
+            3.711896e-003,
+            0.4, 2.1
+        </item>
+        <!-- beautyshot *************************************************** -->
+        <item name="beautyshot_supported">
+            2
+        </item>
+        <item name="relighting_supported">
+            true
+        </item>
+        <!-- rear outfocus ********************************************* -->
+        <item name="rear_outfocus_supported">
+            1
+        </item>
+        <!-- front outfocus ********************************************* -->
+        <item name="front_outfocus_supported">
+            1
+        </item>
+        <!-- HDR *************************************************** -->
+        <item name="hdr_supported">
+            3
+        </item>
+        <!-- super zoom *************************************************** -->
+        <item name="super_zoom_supported">
+            true
+        </item>
+        <!-- AE focus *************************************************** -->
+        <item name="AE_focus_supported">
+            true
+        </item>
+        <!-- Motion Quickview *************************************************** -->
+        <item name="motionquickviewer_supported">
+            true
+        </item>
+        <!-- HAL 3.0 *************************************************** -->
+        <item name="hal_supported">
+            1
+        </item>
+        <!-- Raw format *************************************************** -->
+        <item name="raw_picture_saving_supported">
+            true
+        </item>
+        <!-- Manual mode *************************************************** -->
+        <item name="manual_mode_supported">
+            1
+        </item>
+        <!-- Beauty shot tone adjustment value ********************************* -->
+        <item name="beautyshot_tone_adjust">
+            75
+        </item>
+        <!-- Voice shutter *************************************************** -->
+        <item name="voice_shutter_supported">
+            true
+        </item>
+        <!-- Manual video mode *************************************************** -->
+        <item name="manual_video_mode_supported">
+            1
+        </item>
+        <!-- Hi-fi recording *************************************************** -->
+        <item name="hifi_recording_supported">
+            true
+        </item>
+        <!-- Video HDR supported *************************************************** -->
+        <item name="video_hdr_supported">
+            false
+        </item>
+        <!-- Rear curtain flash supported *************************************************** -->
+        <item name="rear_curtain_sync_supported">
+            true
+        </item>
+        <!-- Camera Type Front *************************************************** -->
+        <item name="camera_type_front">
+            2
+        </item>
+        <!-- Camera Type Rear *************************************************** -->
+        <item name="camera_type_rear">
+            1
+        </item>
+        <!-- Steady camera  supported *************************************************** -->
+        <item name="steady_camera_supported">
+            0
+        </item>
+        <!-- Film emulator  supported *************************************************** -->
+        <item name="film_emulator_supported">
+            true
+        </item>
+        <!-- Film strength  supported *************************************************** -->
+        <item name="film_strength_supported">
+            true
+        </item>
+        <!-- Wide Camera Crop Zoom level *************************************************** -->
+        <item name="crop_zoom_level">
+            12
+        </item>
+        <!-- Sub camera zoom level *************************************************** -->
+        <item name="second_camera_max_zoom_level">
+            99
+        </item>
+        <!-- Shot to shot improvement *************************************************** -->
+        <item name="fast_shot_supported">
+            0
+        </item>
+        <!-- ZSL supported in Manual mode *************************************************** -->
+        <item name="zsl_manual_supported">
+            true
+        </item>
+        <!-- Burst shot per sencond for front camera************************************** -->
+        <item name="burst_shot_per_second_front">
+            104800480
+        </item>
+        <!-- Burst shot per sencond *************************************************** -->
+        <item name="burst_shot_per_second">
+            100670067
+        </item>
+        <!-- Burst shot max count *************************************************** -->
+        <item name="burst_shot_max_count">
+            101000030
+        </item>
+        <!-- gapless loop recording *************************************************** -->
+        <item name="gapless_loop_recording_supported">
+            false
+        </item>
+        <!-- Use wide camera as default ************************************************ -->
+        <item name="wide_camera_default">
+            false
+        </item>
+        <!-- shutter zoom *************************************************** -->
+	<item name="shutter_zoom_supported">
+            true
+        </item>
+        <!-- signature_supported *************************************************** -->
+        <item name="signature_supported">
+            true
+        </item>
+        <!-- ae_control_supported *************************************************** -->
+        <item name="ae_control_supported">
+            true
+        </item>
+	<!-- Square mode ************************************************ -->
+        <item name="square_mode_supported">
+            true
+        </item>
+        <!-- Optic Zoom ************************************************ -->
+        <item name="optic_zoom_supported">
+            0
+        </item>
+        <!-- Graphy default setting ************************************************ -->
+        <item name="graphy_default_on">
+            true
+        </item>
+        <!-- Graphy ************************************************ -->
+        <item name="graphy_supported">
+            true
+        </item>
+        <!-- Log profile in manual video ***************************************** -->
+        <item name="log_profile_supported">
+            true
+        </item>
+       <!-- JOAN renewal ************************************************ -->
+        <item name="joan_renewal_supported">
+            true
+        </item>
+         <!-- Smart Cam ************************************************ -->
+        <item name="smart_cam_supported">
+            true
+        </item>
+		<!-- Sticker ************************************************ -->
+        <item name="sticker_supported">
+            false
+        </item>
+        <item name="auto_framing_supported">
+            1
+        </item>
+        <!-- shot solution supported ************************************ -->
+        <item name="shot_solution_supported">
+            true
+        </item>
+        <!-- SW Binning ************************************************ -->
+        <item name="binning_supported">
+            1
+        </item>
+        <!-- use super bright mode ************************************ -->
+        <item name="use_super_bright">
+            true
+        </item>
+        <!-- google lens supported ************************************ -->
+        <item name="google_lens_supported">
+            0
+        </item>
+        <!-- SW Binning normal angle picture size ********************* -->
+        <item name="camera_binning_pictureSize_rear_supported">
+            2328x1744,
+            2328x1312,
+            2328x1164,
+            1744x1744
+        </item>
+        </default>
+    <!-- VZW model ******************************************************** -->
+    <M-731884953.M81952057>
+        <!-- Graphy default setting ************************************************ -->
+        <item name="graphy_default_on">
+            true
+        </item>
+    </M-731884953.M81952057>
+</Preference>

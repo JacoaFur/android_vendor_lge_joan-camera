@@ -1,0 +1,11 @@
+--- a/device.mk
++++ b/device.mk
+@@ -1,5 +1,8 @@
+ # Inherit LG V30 Stock Camera port if present
++$(call inherit-product-if-exists, vendor/lge/camera/camera.mk)
++
+ # Camera aux package list for wide-angle lens access
+ PRODUCT_PROPERTY_OVERRIDES += \
+-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
++    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.lge.camera \
++    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.lge.camera
